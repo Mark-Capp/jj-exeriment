@@ -1,14 +1,8 @@
 package main
 
-import (
-	"fmt"
-
-	"gorm.io/driver/sqlite" // Sqlite driver based on CGO
-	"gorm.io/gorm"
-)
+import "fmt"
 
 func main() {
-	db, err := gorm.Open(sqlite.Open("gorm.db"), &gorm.Config{})
 	fmt.Println("thing")
 	fmt.Println("another thing")
 	thing()
