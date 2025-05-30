@@ -9,5 +9,5 @@ func main() {
 }
 
 func thing() {
-	fmt.Println("Actually printing this time")
+	fmt.Println("Actually printing this time 2")
 }
