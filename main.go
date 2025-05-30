@@ -8,7 +8,10 @@ import (
 )
 
 func main() {
-	db, err := gorm.Open(sqlite.Open("gorm.db"), &gorm.Config{})
+	_, err := gorm.Open(sqlite.Open("gorm.db"), &gorm.Config{})
+	if err != nil {
+		fmt.Println("could not connect to database")
+	}
 	fmt.Println("thing")
 	fmt.Println("another thing")
 	thing()
